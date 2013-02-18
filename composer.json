@@ -1,0 +1,25 @@
+{
+    "name": "florianwolters/component-util-reflection",
+    "description": "Offers operations for the PHP Reflection API.",
+    "type": "library",
+    "keywords": ["reflection", "utility"],
+    "homepage": "http://github.com/FlorianWolters/PHP-Component-Util-Reflection",
+    "license": "LGPL-3.0+",
+    "authors": [
+      {
+        "name": "Florian Wolters",
+        "email": "wolters.fl@gmail.com",
+        "homepage": "http://blog.florianwolters.de",
+        "role": "Developer"
+      }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "florianwolters/component-core-stringutils": ">=0.2-beta"
+    },
+    "autoload": {
+        "psr-0": {
+            "FlorianWolters": "src/php"
+        }
+    }
+}
