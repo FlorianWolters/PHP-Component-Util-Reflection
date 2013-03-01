@@ -7,7 +7,7 @@ use \ReflectionMethod;
 use FlorianWolters\Component\Core\StringUtils;
 
 /**
- * The static class {@see ReflectionUtils} contains methods which simplify the
+ * The static class {@see ReflectionUtils} provides methods which simplify the
  * usage of the {@link http://php.net/book.reflection PHP reflection
  * Application Programming Interface (API)}.
  *
@@ -22,10 +22,9 @@ class ReflectionUtils
     // @codeCoverageIgnoreStart
 
     /**
-     * {@see ReflectionUtils} instances should *NOT* be constructed in standard
+     * {@see ReflectionUtils} instances can **NOT** be constructed in standard
      * programming.
      *
-     * Instead, the class should be used as:
      * Instead, the class should be used as:
      * /---code php
      * $reflectedClass = ReflectionUtils::reflectClassUnderTest();

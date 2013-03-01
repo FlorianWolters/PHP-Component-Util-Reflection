@@ -5,7 +5,7 @@ use \ReflectionClass;
 use \ReflectionMethod;
 
 /**
- * Test class for {@see ReflectionUtils}</tt>.
+ * Test class for {@see ReflectionUtils}.
  *
  * @author    Florian Wolters <wolters.fl@gmail.com>
  * @copyright 2011-2013 Florian Wolters
@@ -18,6 +18,8 @@ use \ReflectionMethod;
 class ReflectionUtilsTest extends \PHPUnit_Framework_TestCase
 {
     /**
+     * The qualified class name of the class under test.
+     *
      * @var string
      */
     private static $classNameUnderTest;
