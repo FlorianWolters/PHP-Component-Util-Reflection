@@ -1,6 +1,6 @@
 {
     "name": "florianwolters/component-util-reflection",
-    "description": "Offers operations for the PHP Reflection API.",
+    "description": "Provides operations for the PHP Reflection API as a PHP component.",
     "type": "library",
     "keywords": ["reflection", "utility"],
     "homepage": "http://github.com/FlorianWolters/PHP-Component-Util-Reflection",
