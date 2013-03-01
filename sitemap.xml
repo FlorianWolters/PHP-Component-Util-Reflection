@@ -12,9 +12,24 @@
 <url>
 	<loc>http://florianwolters.github.com/PHP-Component-Util-Reflection/namespace-FlorianWolters.Component.Util.html</loc>
 </url>
+<url>
+	<loc>http://florianwolters.github.com/PHP-Component-Util-Reflection/namespace-PHP.html</loc>
+</url>
 
 
 <url>
 	<loc>http://florianwolters.github.com/PHP-Component-Util-Reflection/class-FlorianWolters.Component.Util.ReflectionUtils.html</loc>
+</url>
+<url>
+	<loc>http://florianwolters.github.com/PHP-Component-Util-Reflection/class-ReflectionClass.html</loc>
+</url>
+<url>
+	<loc>http://florianwolters.github.com/PHP-Component-Util-Reflection/class-ReflectionFunctionAbstract.html</loc>
+</url>
+<url>
+	<loc>http://florianwolters.github.com/PHP-Component-Util-Reflection/class-ReflectionMethod.html</loc>
+</url>
+<url>
+	<loc>http://florianwolters.github.com/PHP-Component-Util-Reflection/class-Reflector.html</loc>
 </url>
 </urlset>

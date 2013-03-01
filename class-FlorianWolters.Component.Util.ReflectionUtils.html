@@ -7,7 +7,7 @@
 	<title>Class FlorianWolters\Component\Util\ReflectionUtils | FlorianWolters\Component\Util</title>
 
 	<script type="text/javascript" src="resources/combined.js?819867491"></script>
-	<script type="text/javascript" src="elementlist.js?1888816714"></script>
+	<script type="text/javascript" src="elementlist.js?2357900777"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -28,6 +28,8 @@
 				<li class="active"><a href="namespace-FlorianWolters.Component.Util.html">Util</a>
 						</li>
 							</ul></li></ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
 			</ul>
 		</div>
 
@@ -88,7 +90,7 @@
 
 	<div class="description">
 	
-<p>The static class <code><a href="class-FlorianWolters.Component.Util.ReflectionUtils.html">FlorianWolters\Component\Util\ReflectionUtils</a></code> contains methods which simplify the
+<p>The static class <code><a href="class-FlorianWolters.Component.Util.ReflectionUtils.html">FlorianWolters\Component\Util\ReflectionUtils</a></code> provides methods which simplify the
 usage of the <a href="http://php.net/book.reflection">PHP
 reflection Application Programming Interface (API)</a>.</p>
 
@@ -119,7 +121,7 @@ href="mailto:wolters.fl&#64;gmail.com">wolters.fl&#64;<!---->gmail.com</a>&gt;<b
 				Class available since Release 0.1.0<br />
 				<b>Link:</b>
 				<a href="http://github.com/FlorianWolters/PHP-Component-Util-Reflection">http://github.com/FlorianWolters/PHP-Component-Util-Reflection</a><br />
-		<b>Located at</b> <a href="source-class-FlorianWolters.Component.Util.ReflectionUtils.html#9-163" title="Go to source code">FlorianWolters/Component/Util/ReflectionUtils.php</a><br />
+		<b>Located at</b> FlorianWolters/Component/Util/ReflectionUtils.php<br />
 	</div>
 
 
@@ -137,22 +139,21 @@ href="mailto:wolters.fl&#64;gmail.com">wolters.fl&#64;<!---->gmail.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-FlorianWolters.Component.Util.ReflectionUtils.html#24-36" title="Go to source code">__construct</a>( )</code>
+		<code>__construct( )</code>
 
 		<div class="description short">
 			
-<p><code><a href="class-FlorianWolters.Component.Util.ReflectionUtils.html">FlorianWolters\Component\Util\ReflectionUtils</a></code> instances should <em>NOT</em> be constructed in
+<p><code><a href="class-FlorianWolters.Component.Util.ReflectionUtils.html">FlorianWolters\Component\Util\ReflectionUtils</a></code> instances can <strong>NOT</strong> be constructed in
 standard programming.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p><code><a href="class-FlorianWolters.Component.Util.ReflectionUtils.html">FlorianWolters\Component\Util\ReflectionUtils</a></code> instances should <em>NOT</em> be constructed in
+<p><code><a href="class-FlorianWolters.Component.Util.ReflectionUtils.html">FlorianWolters\Component\Util\ReflectionUtils</a></code> instances can <strong>NOT</strong> be constructed in
 standard programming.</p>
 
-<p>Instead, the class should be used as: Instead, the class should be used
-as:</p>
+<p>Instead, the class should be used as:</p>
 
 <pre
 class="php"><code>$reflectedClass = ReflectionUtils::reflectClassUnderTest();</code></pre>
@@ -178,7 +179,7 @@ class="php"><code>$reflectedClass = ReflectionUtils::reflectClassUnderTest();</c
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createNewInstanceWithoutConstructor">#</a>
-		<code><a href="source-class-FlorianWolters.Component.Util.ReflectionUtils.html#40-73" title="Go to source code">createNewInstanceWithoutConstructor</a>( <span>string <var>$className</var></span>, <span>array <var>$parameters</var> = <span class="php-keyword1">array</span>() </span> )</code>
+		<code>createNewInstanceWithoutConstructor( <span>string <var>$className</var></span>, <span>array <var>$parameters</var> = <span class="php-keyword1">array</span>() </span> )</code>
 
 		<div class="description short">
 			
@@ -227,14 +228,14 @@ number of parameters which are passed to the constructor of the class.</p>
 
 		<td class="attributes"><code>
 			 public static
-			ReflectionClass
+			<code><a href="class-ReflectionClass.html">ReflectionClass</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_reflectClassUnderTest">#</a>
-		<code><a href="source-class-FlorianWolters.Component.Util.ReflectionUtils.html#75-93" title="Go to source code">reflectClassUnderTest</a>( <span>string <var>$classSuffix</var> = <span class="php-quote">'Test'</span></span> )</code>
+		<code>reflectClassUnderTest( <span>string <var>$classSuffix</var> = <span class="php-quote">'Test'</span></span> )</code>
 
 		<div class="description short">
 			
@@ -259,7 +260,7 @@ number of parameters which are passed to the constructor of the class.</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>ReflectionClass</code><br>The reflected class.<br />
+					<code><code><a href="class-ReflectionClass.html">ReflectionClass</a></code></code><br>The reflected class.<br />
 				</div>
 
 
@@ -272,14 +273,14 @@ number of parameters which are passed to the constructor of the class.</p>
 
 		<td class="attributes"><code>
 			 public static
-			ReflectionMethod
+			<code><a href="class-ReflectionMethod.html">ReflectionMethod</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_reflectMethodUnderTest">#</a>
-		<code><a href="source-class-FlorianWolters.Component.Util.ReflectionUtils.html#95-129" title="Go to source code">reflectMethodUnderTest</a>( <span>string <var>$methodPrefix</var> = <span class="php-quote">'test'</span></span>, <span>string <var>$classSuffix</var> = <span class="php-quote">'Test'</span> </span> )</code>
+		<code>reflectMethodUnderTest( <span>string <var>$methodPrefix</var> = <span class="php-quote">'test'</span></span>, <span>string <var>$classSuffix</var> = <span class="php-quote">'Test'</span> </span> )</code>
 
 		<div class="description short">
 			
@@ -310,7 +311,7 @@ visibility.</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>ReflectionMethod</code><br>The reflected method.<br />
+					<code><code><a href="class-ReflectionMethod.html">ReflectionMethod</a></code></code><br>The reflected method.<br />
 				</div>
 
 
