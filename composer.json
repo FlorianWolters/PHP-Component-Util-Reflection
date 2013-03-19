@@ -15,7 +15,7 @@
     ],
     "require": {
         "php": ">=5.4",
-        "florianwolters/component-core-stringutils": ">=0.2-beta"
+        "florianwolters/component-core-stringutils": "0.2.*@beta"
     },
     "autoload": {
         "psr-0": {
