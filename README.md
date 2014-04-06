@@ -1,8 +1,33 @@
 # FlorianWolters\Component\Util\Reflection
 
 [![Build Status](https://secure.travis-ci.org/FlorianWolters/PHP-Component-Util-Reflection.png?branch=master)](http://travis-ci.org/FlorianWolters/PHP-Component-Util-Reflection)
+[![Latest Stable Version](https://poser.pugx.org/florianwolters/component-util-reflection/version.png)](https://packagist.org/packages/florianwolters/component-util-reflection)
+[![Latest Unstable Version](https://poser.pugx.org/florianwolters/component-util-reflection/v/unstable.png)](https://packagist.org/packages/florianwolters/component-util-reflection)
+
+| Period of Time         | Number of Downloads                                                                                                                                                      |
+| ----------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| <small>Total</small>   | [![Total Downloads](https://poser.pugx.org/florianwolters/component-util-reflection/downloads.png)](https://packagist.org/packages/florianwolters/component-util-reflection)   |
+| <small>Monthly</small> | [![Monthly Downloads](https://poser.pugx.org/florianwolters/component-util-reflection/d/monthly.png)](https://packagist.org/packages/florianwolters/component-util-reflection) |
+| <small>Daily</small>   | [![Daily Downloads](https://poser.pugx.org/florianwolters/component-util-reflection/d/daily.png)](https://packagist.org/packages/florianwolters/component-util-reflection)     |
 
 **FlorianWolters\Component\Util\Reflection** is a simple-to-use [PHP][17] component that provides operations for the [PHP Reflection Application Programming Interface (API)][26].
+
+## Table of Contents (ToC)
+
+* [Introduction](#introduction)
+* [Features](#features)
+* [Requirements](#requirements)
+* [Usage](#usage)
+* [Installation](#installation)
+  * [Local Installation](#local-installation)
+  * [System-Wide Installation](#system-wide-installation)
+* [As A Dependency On Your Component](#as-a-dependency-on-your-component)
+  * [Composer](#composer)
+  * [PEAR](#pear)
+* [Development Environment](#development-environment)
+* [Contributing](#contributing)
+* [Credits](#credits)
+* [License](#license)
 
 ## Introduction
 
@@ -21,22 +46,30 @@
         * [phpdcd][5]: Dead Code Detector (DCD)
 * Installable via [Composer][3] or the [PEAR command line installer][11]:
     * Provides a [Packagist][25] package which can be installed using the dependency manager [Composer][3].
-
-      Click [here][24] for the package on [Packagist][25].
+        * Click [here][24] for the package on [Packagist][25].
     * Provides a [PEAR package][13] which can be installed using the package manager [PEAR installer][11].
+        * Click [here][9] for the [PEAR channel][12].
+* Provides a complete Application Programming Interface (API) documentation generated with the documentation generator [phpDocumentor][2].
+    * Click [here][1] for the current API documentation.
+* Follows the following "standards" from the [PHP Framework Interoperability Group (FIG)][29]. PSR stands for PHP Standards Recommendation:
+    * [PSR-0][6]: Autoloading Standards
 
-      Click [here][9] for the [PEAR channel][12].
-* Provides a complete Application Programming Interface (API) documentation generated with the documentation generator [ApiGen][2].
+        > Aims to provide a standard file, class and namespace convention to allow plug-and-play code.
+    * [PSR-1][7]: Basic Coding Standard
 
-  Click [here][1] for the current API documentation.
-* Follows the [PSR-0][6] requirements for autoloader interoperability.
-* Follows the [PSR-1][7] basic coding style guide.
-* Follows the [PSR-2][8] coding style guide.
+        > Aims to ensure a high level of technical interoperability between shared PHP code.
+    * [PSR-2][8]: Coding Style Guide
+
+        > Provides a Coding Style Guide for projects looking to standardize their code.
+    * [PSR-4][28]: Autoloader
+
+        > A more modern take on autoloading reflecting advances in the ecosystem.
 * Follows the [Semantic Versioning][20] Specification (SemVer) 2.0.0-rc.1.
 
 ## Requirements
 
 * [PHP][17] >= 5.4
+* [Composer][3]
 
 ## Usage
 
@@ -72,7 +105,7 @@ If you are creating a component that relies on **FlorianWolters\Component\Util\R
 ```json
 {
     "require": {
-        "florianwolters/component-util-reflection": "0.1.*"
+        "florianwolters/component-util-reflection": "0.3.*"
     }
 }
 ```
@@ -87,8 +120,8 @@ If you are creating a component that relies on **FlorianWolters\Component\Util\R
     <package>
       <name>Reflection</name>
       <channel>pear.florianwolters.de</channel>
-      <min>0.1.0</min>
-      <max>0.1.99</max>
+      <min>0.3.0</min>
+      <max>0.3.99</max>
     </package>
   </required>
 </dependencies>
@@ -126,20 +159,20 @@ You should have received a copy of the GNU Lesser General Public License along w
 
 [1]: http://blog.florianwolters.de/PHP-Component-Util-Reflection
      "FlorianWolters\Component\Util | Application Programming Interface (API) documentation"
-[2]: http://apigen.org
-     "ApiGen | API documentation generator for PHP 5.3.+"
+[2]: http://phpdoc.org
+     "phpDocumentor 2"
 [3]: http://getcomposer.org
      "Composer"
 [4]: https://github.com/sebastianbergmann/phpcpd
      "sebastianbergmann/phpcpd · GitHub"
 [5]: https://github.com/sebastianbergmann/phpdcd
      "sebastianbergmann/phpdcd · GitHub"
-[6]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
-     "PSR-0 requirements for autoloader interoperability"
-[7]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md
-     "PSR-1 basic coding style guide"
-[8]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
-     "PSR-2 coding style guide"
+[6]: http://php-fig.org/psr/psr-0
+     "PSR-0: Autoloading Standards"
+[7]: http://php-fig.org/psr/psr-1
+     "PSR-1: Basic Coding Standard"
+[8]: http://php-fig.org/psr/psr-2
+     "PSR-2: Coding Style Guide"
 [9]: http://pear.florianwolters.de
      "PEAR channel of Florian Wolters"
 [10]: http://pear.php.net
@@ -172,3 +205,7 @@ You should have received a copy of the GNU Lesser General Public License along w
       "PHP: Reflection"
 [27]: src/php/FlorianWolters/Component/Util/ReflectionUtils.php
       "FlorianWolters\Component\Util\ReflectionUtils"
+[28]: http://php-fig.org/psr/psr-4
+      "PSR-4: Improved Autoloading"
+[29]: http://php-fig.org
+      "PHP-FIG — PHP Framework Interop Group"
