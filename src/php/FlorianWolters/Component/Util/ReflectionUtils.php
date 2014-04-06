@@ -1,4 +1,14 @@
 <?php
+/**
+ * FlorianWolters\Component\Util\Reflection
+ *
+ * PHP Version 5.4
+ *
+ * @copyright 2011-2014 Florian Wolters (http://blog.florianwolters.de)
+ * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
+ * @link      http://github.com/FlorianWolters/PHP-Component-Util-Reflection
+ */
+
 namespace FlorianWolters\Component\Util;
 
 use \ReflectionClass;
@@ -12,10 +22,6 @@ use FlorianWolters\Component\Core\StringUtils;
  * usage of the {@link http://php.net/book.reflection PHP reflection
  * Application Programming Interface (API)}.
  *
- * @author    Florian Wolters <wolters.fl@gmail.com>
- * @copyright 2011-2013 Florian Wolters
- * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
- * @link      http://github.com/FlorianWolters/PHP-Component-Util-Reflection
  * @since     Class available since Release 0.1.0
  */
 class ReflectionUtils
@@ -49,12 +55,12 @@ class ReflectionUtils
      *
      * @param string  $className The name of the class to reflect.
      * @param mixed[] $arguments The optional arguments to be passed to the
-     *                           constructor.
+     *    constructor.
      *
      * @return object A new instance of the class to reflect.
      *
-     * @throw ReflectionException If the class with the specified class name
-     *                            does not exist.
+     * @throws ReflectionException If the class with the specified class name
+     *    does not exist.
      */
     public static function createNewInstanceWithoutConstructor(
         $className,
@@ -81,7 +87,7 @@ class ReflectionUtils
      * @param object  $object     The object on which to invoke the method.
      * @param strin   $methodName The name of the method to invoke.
      * @param mixed[] $arguments  The optional arguments to be passed to the
-     *                            method.
+     *    method.
      *
      * @return void
      */
@@ -104,18 +110,15 @@ class ReflectionUtils
      *
      * @param string    $className The name of the class to check.
      * @param integer[] $filters   Any combination of
-     *                             `ReflectionMethod::IS_STATIC`,
-     *                             `ReflectionMethod::IS_PUBLIC`,
-     *                             `ReflectionMethod::IS_PROTECTED`,
-     *                             `ReflectionMethod::IS_PRIVATE`,
-     *                             `ReflectionMethod::IS_ABSTRACT`,
-     *                             `ReflectionMethod::IS_FINAL`.
+     *    `ReflectionMethod::IS_STATIC`, `ReflectionMethod::IS_PUBLIC`,
+     *    `ReflectionMethod::IS_PROTECTED`, `ReflectionMethod::IS_PRIVATE`,
+     *    `ReflectionMethod::IS_ABSTRACT`, `ReflectionMethod::IS_FINAL`.
      *
      * @return ReflectionMethod[] The {@see ReflectionMethod} objects reflecting
-     *                            each method.
+     *    each method.
      *
-     * @throw ReflectionException If the class with the specified class name
-     *                            does not exist.
+     * @throws ReflectionException If the class with the specified class name
+     *    does not exist.
      */
     public static function methodsForClassWithoutInheritedMethods(
         $className,
@@ -146,17 +149,14 @@ class ReflectionUtils
      *
      * @param string    $className The name of the class to check.
      * @param integer[] $filters   Any combination of
-     *                             `ReflectionMethod::IS_STATIC`,
-     *                             `ReflectionMethod::IS_PUBLIC`,
-     *                             `ReflectionMethod::IS_PROTECTED`,
-     *                             `ReflectionMethod::IS_PRIVATE`,
-     *                             `ReflectionMethod::IS_ABSTRACT`,
-     *                             `ReflectionMethod::IS_FINAL`.
+     *    `ReflectionMethod::IS_STATIC`, `ReflectionMethod::IS_PUBLIC`,
+     *    `ReflectionMethod::IS_PROTECTED`, `ReflectionMethod::IS_PRIVATE`,
+     *    `ReflectionMethod::IS_ABSTRACT`, `ReflectionMethod::IS_FINAL`.
      * @return ReflectionMethod[] The {@see ReflectionMethod} objects reflecting
-     *                            each method.
+     *    each method.
      *
-     * @throw ReflectionException If the class with the specified class name
-     *                            does not exist.
+     * @throws ReflectionException If the class with the specified class name
+     *    does not exist.
      */
     public static function methodsForClass(
         $className,
@@ -188,10 +188,10 @@ class ReflectionUtils
      * @param string $className The name of the class to check.
      *
      * @return ReflectionClass[] The {@see ReflectionClass} objects reflecting
-     *                           each parent class.
+     *    each parent class.
      *
-     * @throw ReflectionException If the class with the specified class name
-     *                            does not exist.
+     * @throws ReflectionException If the class with the specified class name
+     *    does not exist.
      */
     public static function parentClassesForClass($className)
     {
@@ -213,7 +213,7 @@ class ReflectionUtils
      * `PHPUnit_Framework_TestCase`.
      *
      * @param string $classSuffix The sufix of the class name, the convention
-     *                            is `Test`.
+     *    is `Test`.
      *
      * @return ReflectionClass The reflected class.
      */
@@ -236,9 +236,9 @@ class ReflectionUtils
      * `PHPUnit_Framework_TestCase`.
      *
      * @param string $methodPrefix The prefix of the method name, the convention
-     *                             is `test`.
+     *    is `test`.
      * @param string $classSuffix  The suffix of the class name, the convention
-     *                             is `Test`.
+     *    is `Test`.
      *
      * @return ReflectionMethod The reflected method.
      */
@@ -267,7 +267,7 @@ class ReflectionUtils
      *
      * @param string $className   The name of the class.
      * @param string $classSuffix The suffix of the class name, the convention
-     *                            is `Test`.
+     *    is `Test`.
      *
      * @return string The name of the class under test.
      */
@@ -284,7 +284,7 @@ class ReflectionUtils
      *
      * @param string $methodName   The name of the method.
      * @param string $methodPrefix The prefix of the method name, the convention
-     *                             is `test`.
+     *    is `test`.
      *
      * @return string The name of the method under test.
      */

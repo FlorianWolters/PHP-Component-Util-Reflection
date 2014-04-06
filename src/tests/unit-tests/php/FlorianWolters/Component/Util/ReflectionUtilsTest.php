@@ -1,4 +1,14 @@
 <?php
+/**
+ * FlorianWolters\Component\Util\Reflection
+ *
+ * PHP Version 5.4
+ *
+ * @copyright 2011-2014 Florian Wolters (http://blog.florianwolters.de)
+ * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
+ * @link      http://github.com/FlorianWolters/PHP-Component-Util-Reflection
+ */
+
 namespace FlorianWolters\Component\Util;
 
 use \ReflectionClass;
@@ -8,9 +18,6 @@ use \ReflectionMethod;
  * Test class for {@see ReflectionUtils}.
  *
  * @author    Florian Wolters <wolters.fl@gmail.com>
- * @copyright 2011-2013 Florian Wolters
- * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
- * @link      http://github.com/FlorianWolters/PHP-Component-Util-Reflection
  * @since     Class available since Release 0.1.0
  *
  * @covers    FlorianWolters\Component\Util\ReflectionUtils
