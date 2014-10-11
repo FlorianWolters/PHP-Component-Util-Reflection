@@ -1,9 +1,10 @@
 <?php
 /**
- * FlorianWolters\Component\Util\Reflection
+ * FlorianWolters\Component\Util\ReflectionUtilsTest
  *
  * PHP Version 5.4
  *
+ * @author    Florian Wolters <wolters.fl@gmail.com>
  * @copyright 2011-2014 Florian Wolters (http://blog.florianwolters.de)
  * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
  * @link      http://github.com/FlorianWolters/PHP-Component-Util-Reflection
@@ -17,10 +18,8 @@ use \ReflectionMethod;
 /**
  * Test class for {@see ReflectionUtils}.
  *
- * @author    Florian Wolters <wolters.fl@gmail.com>
- * @since     Class available since Release 0.1.0
- *
- * @covers    FlorianWolters\Component\Util\ReflectionUtils
+ * @since  Class available since Release 0.1.0
+ * @covers FlorianWolters\Component\Util\ReflectionUtils
  */
 class ReflectionUtilsTest extends \PHPUnit_Framework_TestCase
 {

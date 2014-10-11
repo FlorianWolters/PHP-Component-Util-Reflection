@@ -1,9 +1,10 @@
 <?php
 /**
- * FlorianWolters\Component\Util\Reflection
+ * FlorianWolters\Component\Util\ReflectionUtils
  *
  * PHP Version 5.4
  *
+ * @author    Florian Wolters <wolters.fl@gmail.com>
  * @copyright 2011-2014 Florian Wolters (http://blog.florianwolters.de)
  * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
  * @link      http://github.com/FlorianWolters/PHP-Component-Util-Reflection
@@ -19,10 +20,10 @@ use FlorianWolters\Component\Core\StringUtils;
 
 /**
  * The static class {@see ReflectionUtils} provides methods which simplify the
- * usage of the {@link http://php.net/book.reflection PHP reflection
+ * usage of the {@link https://php.net/book.reflection PHP Reflection
  * Application Programming Interface (API)}.
  *
- * @since     Class available since Release 0.1.0
+ * @since Class available since Release 0.1.0
  */
 class ReflectionUtils
 {
@@ -39,6 +40,7 @@ class ReflectionUtils
      */
     protected function __construct()
     {
+        // NOOP
     }
 
     // @codeCoverageIgnoreEnd
