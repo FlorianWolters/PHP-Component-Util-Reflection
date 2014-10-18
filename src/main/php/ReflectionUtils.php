@@ -171,8 +171,9 @@ class ReflectionUtils
             $result = $reflectedClass->getMethods();
         } else {
             $result = $reflectedClass->getMethods($filters[0]);
+            $filterCount = count($filters);
 
-            for ($i = 1; $i < count($filters); ++$i) {
+            for ($i = 1; $i < $filterCount; ++$i) {
                 $result = \array_intersect(
                     $result,
                     $reflectedClass->getMethods($filters[$i])
